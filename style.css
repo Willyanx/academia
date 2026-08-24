@@ -58,3 +58,26 @@ input {
     border-radius: 4px;
 }
 
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e03d00;
+}
+
+.alerta {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
