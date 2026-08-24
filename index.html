@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Iron Fitness</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Cabeçalho / Menu */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+            background-color: #000;
+            border-bottom: 2px solid #ff4500;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo span {
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #ff4500;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: #ff4500;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e03d00;
+        }
+
+        /* Modalidades / Serviços */
+        .section {
+            padding: 60px 7%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .section h2 span {
+            color: #ff4500;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 8px;
+            border-bottom: 4px solid transparent;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-bottom: 4px solid #ff4500;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff4500;
+        }
+
+        /* Planos e Preços */
+        .bg-dark {
+            background-color: #1a1a1a;
+        }
+
+        .price-card {
+            background-color: #111;
+            padding: 40px 20px;
+            border: 1px solid #333;
+        }
+
+        .price-card .price {
+            font-size: 2rem;
+            color: #ff4500;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        /* Formulário de Contato */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: #222;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ff4500;
+        }
+
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e03d00;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <h2>IRON<span>FITNESS</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section id="inicio" class="hero">
+        <h1>Foque na <span>Evolução</span></h1>
+        <p>Treinos personalizados, equipamentos de última geração e o suporte que você precisa para alcançar seus objetivos de saúde e estética.</p>
+        <a href="#contato" class="btn">Começar Agora</a>
+    </section>
+
+    <!-- SEÇÃO MODALIDADES -->
+    <section id="modalidades" class="section">
+        <h2>Nossas <span>Modalidades</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Musculação</h3>
+                <p>Equipamentos modernos voltados para ganho de massa muscular, definição e força física geral.</p>
+            </div>
+            <div class="card">
+                <h3>Crossfit</h3>
+                <p>Treinamentos de alta intensidade combinando levantamento de peso, ginástica e condicionamento aeróbico.</p>
+            </div>
+            <div class="card">
+                <h3>Lutas / Boxe</h3>
+                <p>Aulas dinâmicas que queimam calorias, reduzem o estresse e melhoram a agilidade e autodefesa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PLANOS -->
+    <section id="planos" class="section bg-dark">
+        <h2>Escolha seu <span>Plano</span></h2>
+        <div class="grid">
+            <div class="card price-card">
+                <h3>Plano Mensal</h3>
+                <div class="price">R$ 99,90</div>
+                <p>Acesso livre à musculação</p>
+                <p>Avaliação física simples</p>
+                <br>
+                <a href="#contato" class="btn">Matricule-se</a>
+            </div>
+            <div class="card price-card" style="border-color: #ff4500;">
+                <h3>Plano VIP Anual</h3>
+                <div class="price">R$ 79,90 <small>/mês</small></div>
+                <p>Acesso total a todas as modalidades</p>
+                <p>Acompanhamento de personal trainer</p>
+                <br>
+                <a href="#contato" class="btn">Matricule-se</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section">
+        <h2>Fale <span>Conosco</span></h2>
+        <form action="#" method="POST" onsubmit="alert('Mensagem enviada com sucesso!'); return false;">
+            <input type="text" placeholder="Seu Nome completo" required>
+            <input type="email" placeholder="Seu Melhor E-mail" required>
+            <textarea rows="5" placeholder="Sua Mensagem ou Dúvida" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Academia Iron Fitness. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
